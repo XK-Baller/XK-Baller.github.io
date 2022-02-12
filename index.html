@@ -159,7 +159,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/02/11/Vim/">Vim</a>
+      <a class="article-title" href="/2022/02/11/Vim/">Vim - Normal Mode</a>
     </h1>
   
 
@@ -172,17 +172,29 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Operator"><a href="#Operator" class="headerlink" title="Operator"></a>Operator</h2><p>change: <code>c</code></p>
-<p>cut: <code>d</code></p>
-<p>paste: <code>p</code></p>
-<p>duplicate: <code>y</code></p>
-<p>addition on numbers: <code>&lt;C-a&gt;</code></p>
-<p>subtraction on numbers: <code>&lt;C-x&gt;</code></p>
-<h2 id="Motion"><a href="#Motion" class="headerlink" title="Motion"></a>Motion</h2><p>jump to start of words (punctuation considered words): <code>w</code></p>
-<p>jump to start of words (spaces separate words): <code>W</code></p>
-<p>jump to end of words (punctuation considered words): <code>e</code></p>
-<p>jump to end of words (no punctuation): <code>E</code></p>
-<h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>delete a word: <code>daw</code></p>
+        <p><strong>Operator + Motion &#x3D; Action</strong><br>The combination of operators with motions forms a kind of grammar.</p>
+<p><strong>Vim’s grammar has just one more rule</strong>: when an operator command is invoked<br>in duplicate, it acts upon the current line. So dd deletes the current line, while<br>&gt;&gt; indents it.</p>
+<h2 id="Operator"><a href="#Operator" class="headerlink" title="Operator"></a>Operator</h2><p>Change: <code>c</code></p>
+<p>Cut: <code>d</code></p>
+<p>Paste: <code>p</code></p>
+<p>Duplicate: <code>y</code></p>
+<p>Addition on numbers: <code>&lt;C-a&gt;</code></p>
+<p>Subtraction on numbers: <code>&lt;C-x&gt;</code></p>
+<p>Shift right: <code>&gt;</code></p>
+<p>Shift right: <code>&lt;</code></p>
+<p>Autoindent: <code>=</code></p>
+<p>Swap case: <code>g~</code></p>
+<p>Make lowercase: <code>gu</code></p>
+<p>Make uppercase: <code>gU</code></p>
+<p>Comment: <code>gc</code></p>
+<h2 id="Motion"><a href="#Motion" class="headerlink" title="Motion"></a>Motion</h2><p>A word: <code>aw</code></p>
+<p>A paragraph: <code>ap</code></p>
+<p>Entire file: <code>ae</code>, <code>ie</code></p>
+<p>Jump to start of words (punctuation considered words): <code>w</code></p>
+<p>Jump to start of words (spaces separate words): <code>W</code></p>
+<p>Jump to end of words (punctuation considered words): <code>e</code></p>
+<p>Jump to end of words (no punctuation): <code>E</code></p>
+<h2 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h2><p>Delete a word: <code>daw</code></p>
 
       
 
